@@ -1,0 +1,48 @@
+.flag{
+    -fx-background-image: url("../img/Flag.png");
+}
+.label_titles{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: normal;
+    -fx-font-weight: normal;
+    -fx-font-size: 19px;
+    -fx-line-height: 20px;
+    -fx-text-align: center;
+    -fx-text-fill: #546071;
+}
+.button_encrypt_mode{
+    -fx-background-color:  #24282E;
+    -fx-background-radius: 30px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: normal;
+    -fx-font-weight: normal;
+    -fx-font-size: 20px;
+    -fx-line-height: 22px;
+    -fx-text-align: center;
+    -fx-border-radius: 60;
+
+    -fx-text-fill: #546071;
+}
+.button_encrypt_mode:hover{
+    -fx-text-fill: #da6161;
+}
+.button_encrypt_mode:pressed{
+    -fx-background-color: #da6161;
+    -fx-text-fill: #24282E;
+    -fx-border-color: #da6161;
+    -fx-border-width: 2;
+}
+.button_encrypt_mode:focused{
+    -fx-text-fill: #da6161;
+    -fx-border-color: #da6161;
+    -fx-border-width: 2;
+
+}
+.button_encrypt_mode:pressed:focused {
+    -fx-background-color: #da6161;
+    -fx-text-fill: #24282E;
+    -fx-border-color: #da6161;
+    -fx-border-width: 2;
+}
+
+

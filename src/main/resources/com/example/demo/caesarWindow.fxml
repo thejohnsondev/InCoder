@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="787.0" prefWidth="800.0" styleClass="pane" stylesheets="@css/dark.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CaesarController">
+    <children>
+        <Label layoutX="274.0" layoutY="18.0" styleClass="type_algorithm_label" stylesheets="@css/dark.css" text="Caesar cipher" />
+        <Line endX="740.2000122070312" endY="7.62939453125E-6" layoutX="23.0" layoutY="79.0" startX="9.000011444091797" startY="7.62939453125E-6" strokeWidth="2.0" style="-fx-stroke: #7A91B1;" />
+        <Pane layoutX="17.0" layoutY="96.0" prefHeight="114.0" prefWidth="192.0" styleClass="selection_rectangle" stylesheets="@css/dark.css">
+            <children>
+                <RadioButton fx:id="inputTextRadioBtn" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#inputTextRadioBtnAction" stylesheets="@css/dark.css" text="Input text" textFill="#7a91b1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="textFileRadioBtn" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" onAction="#textFileRadioBtnAction" stylesheets="@css/dark.css" text="Text file(.txt)" textFill="#7a91b1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </RadioButton>
+            </children>
+        </Pane>
+        <Pane layoutX="219.0" layoutY="96.0" prefHeight="114.0" prefWidth="192.0" styleClass="selection_rectangle" stylesheets="@css/dark.css">
+            <children>
+                <RadioButton fx:id="encryptRadioBtn" layoutX="13.0" layoutY="38.0" mnemonicParsing="false" onAction="#encryptRadioBtnAction" stylesheets="@css/dark.css" text="Encrypt" textFill="#7a91b1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="decryptRadioBtn" layoutX="13.0" layoutY="72.0" mnemonicParsing="false" onAction="#decryptRadioBtnAction" stylesheets="@css/dark.css" text="Decrypt" textFill="#7a91b1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </RadioButton>
+                <Polygon fill="#41c536" layoutX="192.0" layoutY="59.0" points="-50.0, 40.0, -20.600006103515625, 40.0, -35.4000244140625, 15.600006103515625" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Polygon fill="#c53636" layoutX="192.0" layoutY="2.0" points="-50.0, 40.0, -20.600006103515625, 40.0, -35.0, 62.79998779296875" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            </children>
+        </Pane>
+        <Label layoutX="56.0" layoutY="100.0" styleClass="any_labels" stylesheets="@css/dark.css" text="Select type:" />
+        <Label layoutX="252.0" layoutY="100.0" styleClass="any_labels" stylesheets="@css/dark.css" text="Select mode:" />
+        <Label layoutX="446.0" layoutY="98.0" styleClass="any_labels" stylesheets="@css/dark.css" text="File:" />
+        <Button fx:id="openFileBtn" layoutX="511.0" layoutY="96.0" mnemonicParsing="false" onAction="#openBtnAction" prefHeight="45.0" prefWidth="86.0" styleClass="any_btn" text="Open" />
+        <Button fx:id="saveFileBtn" layoutX="607.0" layoutY="96.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="45.0" prefWidth="86.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Save" />
+        <Button fx:id="encryptOperationBtn" layoutX="486.0" layoutY="151.0" mnemonicParsing="false" onAction="#operationStart" prefHeight="57.0" prefWidth="232.0" styleClass="encrypt_btn" stylesheets="@css/dark.css" text="Encrypt   " />
+        <Polygon fx:id="triangleEncrypt" fill="#c53636" layoutX="699.0" layoutY="130.0" points="-50.0, 40.0, -20.600006103515625, 40.0, -35.0, 62.79998779296875" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Polygon fx:id="triangleDecrypt" fill="#41c536" layoutX="698.0" layoutY="152.0" points="-50.0, 40.0, -20.600006103515625, 40.0, -35.4000244140625, 15.600006103515625" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Label layoutX="17.0" layoutY="211.0" styleClass="any_labels" stylesheets="@css/dark.css" text="Enter your Key number:" />
+        <TextField fx:id="keyTextField" layoutX="17.0" layoutY="240.0" prefHeight="50.0" prefWidth="103.0" stylesheets="@css/dark.css" />
+        <Label layoutX="17.0" layoutY="293.0" styleClass="any_labels" stylesheets="@css/dark.css" text="Input text:" />
+        <TextArea fx:id="inputTextArea" layoutX="16.0" layoutY="322.0" prefHeight="172.0" prefWidth="764.0" />
+        <Label layoutX="17.0" layoutY="497.0" styleClass="any_labels" stylesheets="@css/dark.css" text="Encrypted text:" />
+        <TextArea fx:id="outputTextArea" layoutX="16.0" layoutY="526.0" prefHeight="172.0" prefWidth="764.0" />
+        <Button fx:id="copyBtn" layoutX="17.0" layoutY="708.0" mnemonicParsing="false" onAction="#copyBtnAction" prefHeight="45.0" prefWidth="95.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Copy" />
+        <Button fx:id="pasteBtn" layoutX="122.0" layoutY="708.0" mnemonicParsing="false" onAction="#pasteBtnAction" prefHeight="45.0" prefWidth="95.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Paste" />
+        <Button layoutX="686.0" layoutY="708.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="95.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Help" />
+        <Button fx:id="clearBtn" layoutX="227.0" layoutY="708.0" mnemonicParsing="false" onAction="#clearBtnAction" prefHeight="45.0" prefWidth="95.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Clear" />
+        <Button fx:id="hideKeyBtn" layoutX="130.0" layoutY="242.0" mnemonicParsing="false" onAction="#hideKeyBtnAction" prefHeight="45.0" prefWidth="150.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Hide the key" />
+        <Button fx:id="genKeyBtn" layoutX="290.0" layoutY="242.0" mnemonicParsing="false" onAction="#genKeyBtn" prefHeight="45.0" prefWidth="108.0" styleClass="any_btn" stylesheets="@css/dark.css" text="Gen key" />
+    </children>
+</AnchorPane>

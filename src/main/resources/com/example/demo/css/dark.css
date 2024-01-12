@@ -1,0 +1,97 @@
+.type_algorithm_label{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 48px;
+    -fx-line-height: 53px;
+    -fx-text-align: center;
+
+    -fx-text-fill: #7A91B1;
+}
+.selection_rectangle{
+    -fx-border-color: #3A4351;
+    -fx-border-width: 2;
+    -fx-border-radius: 14;
+}
+.any_labels{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 24px;
+    -fx-line-height: 26px;
+    -fx-text-align: center;
+
+    -fx-text-fill: #7A91B1;
+}
+.radio-button .radio{
+    -fx-padding: 5px;
+    -fx-background-color : white ;
+    -fx-background-image : null  ;
+}
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: #24282E;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-border-width: 2;
+
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 25px;
+    -fx-line-height: 27px;
+    -fx-text-fill: #7A91B1;
+}
+.text-area .content {
+    -fx-background-color: #24282E;
+    -fx-border-color: #24282E;
+}
+.text-field {
+    -fx-background-color: #24282E;
+    -fx-border-width: 2;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 25px;
+    -fx-line-height: 27px;
+    -fx-text-fill: #7A91B1;
+}
+.text-field .content {
+    -fx-background-color: #24282E;
+    -fx-border-color: #24282E;
+}
+.any_btn{
+    -fx-background-color:  #24282E;
+    -fx-background-radius: 14px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: normal;
+    -fx-font-weight: normal;
+    -fx-font-size: 20px;
+    -fx-line-height: 22px;
+    -fx-text-align: center;
+
+    -fx-text-fill: #7A91B1;
+}
+.any_btn:hover{
+    -fx-text-fill: #da6161;
+}
+.any_btn:pressed{
+    -fx-background-color: #da6161;
+    -fx-text-fill: #24282E;
+}
+.encrypt_btn{
+    -fx-background-color:  #24282E;
+    -fx-background-radius: 14px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: normal;
+    -fx-font-weight: normal;
+    -fx-font-size: 30px;
+    -fx-line-height: 30px;
+    -fx-text-align: center;
+
+    -fx-text-fill: #7A91B1;
+}
+.encrypt_btn:hover{
+    -fx-text-fill: #da6161;
+}
+.encrypt_btn:pressed{
+    -fx-background-color: #da6161;
+    -fx-text-fill: #24282E;
+}
+.pane{
+    -fx-background-color:  #151518;
+}
+.main_pane{
+    -fx-background-color:  #1a1a1f;
+}

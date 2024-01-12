@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="787.0" prefWidth="800.0" style="-fx-background-color: #151518;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.NumTransController">
+    <children>
+        <Label layoutX="266.0" layoutY="340.0" styleClass="type_algorithm_label" stylesheets="@css/dark.css" text="Will be soon..." />
+    </children>
+</AnchorPane>

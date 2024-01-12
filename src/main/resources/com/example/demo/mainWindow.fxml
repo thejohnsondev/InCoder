@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="755.0" prefWidth="1100.0" style="-fx-background-color: #151518;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+    <children>
+        <Pane prefHeight="815.0" prefWidth="300.0" style="-fx-background-color: #1a1a1f;">
+            <children>
+                <Pane fx:id="flag" prefHeight="253.0" prefWidth="300.0" styleClass="flag" stylesheets="@css/menuDark.css">
+                    <children>
+                        <Line endX="52.600006103515625" layoutX="173.0" layoutY="81.0" scaleY="3.0" startX="-100.0" stroke="WHITE" />
+                        <Label layoutX="72.0" layoutY="27.0" stylesheets="@css/menuDark.css" text="InCoder" textFill="WHITE">
+                            <font>
+                                <Font name="Berlin Sans FB" size="48.0" />
+                            </font>
+                        </Label>
+                        <Circle fill="WHITE" layoutX="126.0" layoutY="53.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                    </children></Pane>
+                <Label layoutX="46.0" layoutY="257.0" styleClass="label_titles" stylesheets="@css/menuDark.css" text="Classic encrypt algorithms:" />
+                <Line endX="100.19999694824219" layoutX="147.0" layoutY="279.0" startX="-100.0" stroke="#546071" strokeWidth="2.0" />
+                <Button fx:id="morseMenuButton" layoutY="296.0" mnemonicParsing="false" onAction="#morseAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="Morse code" />
+                <Button fx:id="viginereMenuButton" layoutY="348.0" mnemonicParsing="false" onAction="#viginereAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="Viginere cipher" />
+                <Button fx:id="caesarMenuButton" layoutY="400.0" mnemonicParsing="false" onAction="#caesarAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="Caesar cipher" />
+                <Label layoutX="45.0" layoutY="456.0" styleClass="label_titles" stylesheets="@css/menuDark.css" text="Modern encrypt algorithms:" />
+                <Line endX="145.13427734375" layoutX="116.0" layoutY="478.0" startX="-71.00000762939453" stroke="#546071" strokeWidth="2.0" />
+                <Button fx:id="aesMenuButton" layoutY="495.0" mnemonicParsing="false" onAction="#aesAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="AES" />
+                <Button fx:id="rsaMenuButton" layoutY="547.0" mnemonicParsing="false" onAction="#rsaAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="RSA" />
+                <Label layoutX="85.0" layoutY="603.0" styleClass="label_titles" stylesheets="@css/menuDark.css" text="Numeral Systems" />
+                <Line endX="122.86668395996094" layoutX="98.0" layoutY="624.0" startX="-13.000007629394531" stroke="#546071" strokeWidth="2.0" />
+                <Button fx:id="numeralMenuButton" layoutY="642.0" mnemonicParsing="false" onAction="#numeralAction" prefHeight="45.0" prefWidth="300.0" styleClass="button_encrypt_mode" stylesheets="@css/menuDark.css" text="Numeral transfers" />
+            </children></Pane>
+        <Pane layoutX="300.0" prefHeight="50.0" prefWidth="820.0" style="-fx-background-color: #1a1a1f;" />
+        <Pane fx:id="mainPane" layoutX="300.0" layoutY="50.0" prefHeight="720.0" prefWidth="820.0" />
+    </children>
+</Pane>
